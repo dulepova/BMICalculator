@@ -5,6 +5,9 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+/**
+ *
+ */
 public class BMICalculator {
     @Test
     public void calcTest() {
@@ -15,6 +18,7 @@ public class BMICalculator {
         String result = $(By.name("desc")).getAttribute("value");
         Assert.assertEquals(result, "Your category is Normal");
     }
+
     @Test
     public void calcTest1() {
         open("https://healthunify.com/bmicalculator/");
